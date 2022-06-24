@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+ <body>
+   
+     <div class= "heading">
+  <div class="container">
+  <h1 id="title">Food Survey</h1>
+    <h2 id="sub-title">Tell me what food you want!</h2>
+      <p id="description">Everyone likes food. It's so yummy and fills your belly, so it makes you feel good. Tell us about yourself and foods.</p>
+ 
+    <img class="img" src="https://www.washingtonian.com/wp-content/uploads/2021/07/2Fiftys-1500x1000.jpg" alt="food">
+  </div>
+   </div>
+    
+  <form id="survey-form">
+     <div class="personal-info">
+     <div class="container">
+       <ul class="personal-info__list">
+           <li>
+    <label for="name" id="name-label">Name</label>
+      <input type="text" 
+             class="personal-info__data"
+             id="name" 
+             name="name" 
+             placeholder="Name"
+             required>
+           </li>
+           <li>
+    <label for="email" id="email-label">Email</label>
+      <input type="email" 
+             class="personal-info__data"
+             id="email" 
+             name="email" 
+             placeholder="Email@"
+             required>
+           </li>
+           <li>
+    <label for="number" id="number-label">Age</label>
+      <input type="number" 
+             class="personal-info__data"
+             id="number"
+             name="age"  
+             min="1" max="115" 
+             placeholder="25"
+             required>
+           </li>
+       </ul>    
+  </div>
+      </div>
+      
+  <div class="wrapper"> 
+    <div class="food-details"> 
+      <div class="container">
+     <h3>Which restaurant do you like?</h3>
+   <select id="dropdown" name="restaurants">
+     <option value="mcdonalds">McDonald's</option>
+     <option value="chipotle">Chipotle</option>
+     <option value="taco-bell">Taco Bell</option>
+     <option value="panera">Panera Bread</option>
+      <option value="jackinthebox">Jack in the Box</option>
+      <option value="wendys">Wendy's</option>
+      <option value="burgerking">Burger King</option>
+      <option value="starbucks">Starbucks</option>
+     <option value="royrogers">Roy Roger's</option>
+      <option value="dairyqueen">Dairy Queen</option>
+       <option value="dunkin">Dunkin'</option>
+      <option value="cinnabon">Cinnabon</option>
+     <option value="kfc">KFC</option>
+     <option value="arbys">Arby's</option>
+     <option value="pizza-hut">Pizza Hut</option>
+     <option value="popeyes">Popeyes</option>
+     <option value="subway">Subway</option>
+     <option value="sonic">Sonic</option>
+     <option value="fiveguys">Five Guys</option>
+     <option value="panda-express">Panda Express</option>
+     <option value="shake-shack">Shake Shack</option>
+    </select>
+   </div>
+  </div>
+    </div>
+   
+ <div class="wrapper">
+  <div class="food-details">
+    <div class="container">
+      <h3>Where do you live?</h3>
+     <select id="living" name="living">
+       <optgroup label="North America">
+       <option value="usa">USA</option>
+       <option value="mexico">Mexico</option>
+       <option value="canada">Canada</option>
+         </optgroup>
+       <optgroup label="Other Places">
+         <option value="asia">Asia</option>
+         <option value="europe">Europe</option>
+       <option value="africa">Africa</option>
+       <option value="australia">Australia</option>
+       <option value="south-america">South America</option>
+       <option value="antarctica">Antarctica</option>
+      </optgroup>
+    </select>
+   </div>
+  </div>
+    
+  
+        <div class="container">
+      <div class="options">
+  <fieldset>
+    <legend>
+      <h3>Which of the meal options are your favorite? (choose one)</h3>
+      </legend>
+    <ul class="food__list"> 
+      <li>
+    <label for="mac-n-cheese">Mac and Cheese (vegetarian)
+      <input type="radio" name="new-options" id="mac-n-cheese" value="mac-n-cheese">
+    </label>
+      </li>
+      <li>
+    <label for="salmon-risotto">Salmon Risotto
+  <input type="radio" name="new-options" id="salmon-risotto" value= "salmon risotto">
+       </label>
+      </li>
+      <li>
+    <label for="rainbow-wrap"> Rainbow vegetable and Hummus Wrap (vegan)
+       <input type="radio" name="new-options" id="rainbow-wrap" value= "rainbow-wrap">
+       </label>
+      </li>
+      <li>
+    <label for="channa-masala"> Channa Masala (vegan)
+       <input type="radio" name="new-options" id= "channa-masala" value="channa-masala">
+       </label>
+      </li>
+      <li>
+    <label for= "irish-stew"> Irish Stew
+       <input type="radio" name="new-options" id="irish-stew" value="irish-stew">
+    </label>
+      </li>
+    </ul>
+  </fieldset>
+     </div>
+       </div>
+  
+  <div class="container diet">
+    <h3>Do you have any dietry requirements?</h3>
+    <ul class="preferences">
+      <li>
+    <label for="none"> None <input type= "checkbox" id="none" name="preference" value="none"></label>
+      </li>
+    
+      <li>
+    <label for="vegetarian"> Vegetarian
+      <input type= "checkbox" id="vegetarian" name="preference" value="vegetarian"></label>
+      </li>
+    
+      <li>
+     <label for="vegan">Vegan <input type= "checkbox" id="vegan" name="preference" value="vegan"></label>
+      </li>
+    
+      <li>
+     <label for="gluten-free">Gluten Free<input type= "checkbox" id="gluten-free" name="preference" value="gluten-free"></label>
+      </li>
+    
+     <li>
+      <label for="nut-allergy">Nut Allergy<input type= "checkbox" id="nut-allergy" name="preference" value="nut-allergy"></label>
+      </li>
+    </ul>
+  </div>
+      
+    <div class="container">
+      <footer class="comments">
+       <label for="comments">Have a suggestion? We would love to hear your feedback!</label>
+        
+         <textarea id="comments"></textarea>
+        <button type="submit" id="submit" value="submit">Submit</button>
+      </footer>
+     </div>
+    </div>
+   </form>
+  </body>
+</html>
